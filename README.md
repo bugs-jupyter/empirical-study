@@ -1,3 +1,3 @@
 Supplementary Material
 
-This supplementary material is composed of X parts: GitHub, Stack Overflow, and interview.
+This supplementary material is composed of three parts: GitHub, Stack Overflow, and Interview.
