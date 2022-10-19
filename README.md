@@ -3,7 +3,7 @@
 This repository includes all the collected and analyzed data for this study.
 
 ## Mined data
-#### -In the "rawdata" directory are all the mining data from StackOverflow and GitHub. -
+#### In the **rawdata** directory are all the mining data from StackOverflow and GitHub.
 
 To extract the StackOverflow base, the following queries were used and the results are in the raw_data_stack.csv and raw_data_stack_p2.zip files.
  
@@ -22,3 +22,7 @@ from Posts where Tags LIKE '%jupyter-notebook%' or Tags LIKE '%jupyter%' or Tags
 Title LIKE '%jupyter-notebook%' or Title LIKE '%jupyter%' or Title LIKE '%google-colaboratory%'
 ```
 
+## Interviews
+In the **interviews** directory, there is a files:
+
+interview_model.pdf: This PDF file contains the questions asked in the interviews.
