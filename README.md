@@ -5,7 +5,7 @@ This repository includes all the collected and analyzed data for this study.
 ## Mined data
 #### In the **rawdata** directory are 3 mining data from StackOverflow and GitHub.
 
-raw_data_stack.csv: This CSV file contains all data from StackOverflow about Jupyter Posts. To extract this base, the following querie were used. 
+raw_data_stack.csv: This CSV file contains all data from StackOverflow Posts about Jupyter. To extract this base, the following querie were used. 
  
 ```
 select Id,PostTypeId,AcceptedAnswerId,ParentId,CreationDate,DeletionDate,Score,ViewCount,OwnerUserId,OwnerDisplayName,
@@ -23,6 +23,15 @@ select Id,BodyPost,BodyAnswers,TextComments
 from Posts where Tags LIKE '%jupyter-notebook%' or Tags LIKE '%jupyter%' or Tags LIKE '%google-colaboratory%' or
 Title LIKE '%jupyter-notebook%' or Title LIKE '%jupyter%' or Title LIKE '%google-colaboratory%'
 ```
+
+raw_data_git.csv: This CSV file contains all data from GitHub commits. To extract this base, the GitHub API were used.
+
+## Analyzed dataset
+#### Using Cohen's kappa coefficient to define inter-rater reliability, the authors manually ranked the two databases in terms of Bugs, Root Causes, and Impacts.
+
+ - dataset_stack.csv: This CSV file contains all data from sorted StackOverflow posts.
+
+ - dataset_git.csv: This CSV file contains all sorted GitHub commit data.
 
 ## Interviews
 In the **interviews** directory, there is a file:
